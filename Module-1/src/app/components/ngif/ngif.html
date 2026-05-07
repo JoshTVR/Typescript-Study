@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<div>
+    <!--
+    <h1 *ngIf="showGreetings">Hello</h1>
+    <button (click)="Show()">Showing</button>
+    <button (click)="UnShow()">Not Showing</button>
+    <h2>The counter is {{counter}}</h2>
+
+    <input [(ngModel)]="greetingInput" type="text">
+    <span>
+        {{greetingInput}}
+    </span>
+    -->
+
+    <ng-container>
+        <h2>Button Hide</h2>
+        <button class="btn" (click)="Module_1()">Hide the text below</button>
+        <br>
+        <br>
+        <span *ngIf="boolean_one">{{firstStep}}</span>
+    </ng-container>
+    <br>
+    <ng-container>
+        <h2>Show not show</h2>
+        <button (click)="Module_11()">Show</button>
+        <button (click)="Module_12()">Hide</button>
+    </ng-container>
+    <br>
+    <ng-container>
+        <h2>Incremental things</h2>
+        <span>Incremental by: {{incremental}}</span>
+        <span>
+            <button (click)="Module_2()">+</button>
+            <span> </span>
+            <button (click)="Module_3()">-</button>
+        </span>
+    </ng-container>
+    <br>
+    <ng-container>
+        <H2>Text to play with</H2>
+        <input [(ngModel)]="userInput" type="text">
+        <br>
+        <span>{{userInput}}</span>
+    </ng-container>
+    <br>
+    <ng-container>
+        <h2>Is even or odd??</h2>
+        <button (click)="Module_4()">+</button>
+        <span>   {{incremental_2}}    </span>
+        <button (click)="Module_5()">-</button>
+        <br>
+        <span>{{isEvenOrOdd}}</span>
+    </ng-container>
+    
+    
+    
+    
+    
+</div> 
+    
+</body>
+</html>
