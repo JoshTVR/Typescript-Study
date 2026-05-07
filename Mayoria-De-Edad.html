@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <h1>Dom Elements</h1>
+    <input id="html-input">
+    <button onclick="ThingsSpawner()">Agregar</button>
+    <div id="html-div"></div>
+-->
+    <h1>¿Usted es mayor de edad?</h1>
+    <h3>Escriba su edad aqui mismo</h3>
+    <input type="number" id="input">
+    <button onclick="AdultHood()">Enter</button>
+    <div id="html-div"></div>
+
+</body>
+
+<script>
+    /*
+    function ThingsSpawner(){
+        const div = document.getElementById("html-div");
+
+        const span = document.createElement("span");
+        span.innerHTML = "Holaaa";
+
+        const input = document.createElement("input");
+        input.type = "text"
+
+        div.appendChild(input);
+        div.appendChild(span)
+    }
+    */
+    function AdultHood(){
+    const input = document.getElementById("input");
+    if (Number(input.value) >= 18){
+        console.log("El usuario es mayor de edad");
+        const spin = document.createElement("span")
+        spin.innerHTML = `Tu edad es: ${input.value}`
+        const div = document.getElementById("html-div");
+        div.appendChild(spin)
+        console.log(spin);
+        console.log(div);
+
+    } else{
+        console.log("El usuario no es mayor de edad");
+        const spin = document.createElement("span")
+        spin.innerHTML = `Tu edad es: ${input.value}`
+        const div = document.getElementById("html-div");
+        div.appendChild(spin)
+    }
+    }
+
+</script>
+</html>
