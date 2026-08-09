@@ -1,0 +1,25 @@
+# .gitignore global del repo — aplica a TODAS las carpetas/proyectos
+# de aquí para abajo (01-typescript-intro, Module-1-Angular,
+# typescript-react-next-basics, y cualquier carpeta nueva que agregues).
+# Esto evita subir a GitHub archivos pesados o generados que no
+# aportan nada al código (se regeneran solos con npm install / build).
+
+# Dependencias instaladas por npm — se reinstalan con "npm install",
+# no hace falta subirlas nunca.
+node_modules/
+
+# Carpetas de build/compilado generadas automáticamente por cada
+# framework — se vuelven a crear al correr el proyecto.
+.next/
+dist/
+build/
+.angular/
+
+# Archivos de entorno con datos sensibles (API keys, contraseñas).
+.env
+.env.local
+.env*.local
+
+# Archivos de sistema operativo / editor que no son parte del código.
+.DS_Store
+Thumbs.db
